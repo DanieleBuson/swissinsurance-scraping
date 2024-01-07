@@ -54,7 +54,7 @@ def once_a_month_get_data():
 
     # Process and save data to a file with the current date in the filename
     def save_data(base_filename, data):
-        date_str = datetime.now().strftime("%Y-%m-%01")
+        date_str = datetime.now().strftime("%Y-%m-%d")
         filename = f"{base_filename}_{date_str}.json"
         filepath = os.path.join(output_directory, filename)  # Construct the full file path
         with open(filepath, 'w') as file:
