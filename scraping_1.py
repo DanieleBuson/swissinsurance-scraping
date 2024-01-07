@@ -19,17 +19,15 @@ def once_a_month_get_data():
 
     # List of sitemap URLs
     sitemap_urls = [
-        'https://www.concordia.ch/en.sitemap.xml'
-    ]
-
-    ''',
+        'https://www.concordia.ch/en.sitemap.xml',
         'https://www.css.ch/en.sitemap.xml',
         'https://www.helsana.ch/sitemap.en.xml',
         'https://www.sanitas.com/en.sitemap.xml',
         'https://www.swica.ch/en/sitemap.xml',
         'https://www.admin.ch',
         'https://www.ch.ch/en/'
-        '''
+    ]
+
     #https://www.admin.ch
     #https://www.ch.ch/en/
 
