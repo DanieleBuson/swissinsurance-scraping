@@ -8,6 +8,12 @@ import re
 from datetime import datetime
 import json
 
+from dotenv import load_dotenv
+import os
+
+# Load .env file
+load_dotenv()
+
 
 def once_a_month_get_data():
 
@@ -152,8 +158,8 @@ bucket_name = "swissinsurance-bucket-scraping-dw"
 try:
     s3 = boto3.client(
         's3',
-        aws_access_key_id='AKIA4Y4XR5MNJVERIPCS',
-        aws_secret_access_key='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'
+        aws_access_key_id=os.getenv("AWS_ACCESS_KEY_ID"),
+        aws_secret_access_key=os.getenv("AWS_SECRET_ACCESS_KEY")
     )
     s3.list_objects_v2(Bucket=bucket_name)
     print("Connection to S3 bucket was successful.")
