@@ -17,7 +17,7 @@ git clone https://github.com/DanieleBuson/swissinsurance-scraping.git
 
 2. Navigate to the project directory:
 
-cd web-scraping-and-data-storage
+cd swissinsurance-scraping
 
 3. Create a `.env` file and add your AWS S3 credentials:
 
